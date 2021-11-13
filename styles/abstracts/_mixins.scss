@@ -103,12 +103,13 @@ $z-index: (
   }
 }
 
-@mixin heading($margin) {
+@mixin heading($margin, $width: 601px) {
   text-align: center;
-  width: toRem(601px);
+  max-width: toRem($width);
+  width: 100%;
   margin-bottom: toRem($margin);
 }
-@mixin title($margin){
+@mixin title($margin) {
   @include h4;
   text-transform: uppercase;
   margin-bottom: toRem($margin);

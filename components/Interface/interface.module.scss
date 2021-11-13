@@ -1,0 +1,64 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/base/typography";
+@import "../../styles/abstracts/mixins";
+
+.interface {
+  margin: 0 auto;
+  padding: toRem(120px) 0;
+
+  &__heading {
+    @include heading(60px, 625px);
+    margin: 0 auto;
+
+    &-title {
+      @include title(23px);
+    }
+  }
+
+  &__action {
+        max-width: toRem(570px);
+        width: 100%;
+
+    &-title {
+      margin-bottom: toRem(6px);
+      @include h5;
+      text-transform: uppercase;
+    }
+    &-desc{
+          color: $col-text;
+          margin-bottom: toRem(40px);
+    }
+  }
+  &__button {
+    @include grid-column(2, 149px);
+    align-items: center;
+    gap: toRem(25px);
+  }
+
+  &__feedback{
+        max-width: toRem(570px);
+        width: 100%;
+        margin-top: toRem(59px);
+        @include grid-column(3, 170px);
+        column-gap: toRem(30px);
+
+        &-card{
+              max-width: toRem(170px);
+              width: 100%;
+              height: toRem(178px);
+              @include grid-center;
+              background-color: $col-primary;
+              @include border-radius(10px);
+              color: $col-white;
+              padding: toRem(20px) 0;
+
+              &-number{
+                    @include h5;
+              }
+
+              &-name{
+                    text-transform: uppercase;
+              }
+        }
+  }
+}

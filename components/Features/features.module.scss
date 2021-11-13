@@ -6,12 +6,13 @@
   background: url("../../public/assets/images/background.svg") no-repeat center
     center / cover;
   border: 1px solid green;
+  padding: toRem(120px) 0;
 }
 
 .feature {
   &__heading {
     @include heading(120px);
-    margin: toRem(120px) auto;
+    margin: 0 auto;
     color: $col-white;
 
     &-title {
