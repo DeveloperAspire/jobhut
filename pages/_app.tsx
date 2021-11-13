@@ -4,9 +4,9 @@ import Container from '../components/Container'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return(
-  <Container>
+ 
     <Component {...pageProps} />
-  </Container>
+  
   )
   
 }
