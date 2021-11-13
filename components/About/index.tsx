@@ -3,6 +3,7 @@ import { NextComponentType } from "next";
 import styles from "./about.module.scss";
 import Phone from "../../public/assets/images/handphone.svg";
 import Image from "next/image";
+import Card from "../Card";
 
 const About: NextComponentType = () => {
   return (
@@ -22,7 +23,20 @@ const About: NextComponentType = () => {
           <Image src={Phone} alt="A Hand holding a Phone" />
         </div>
 
-        <div></div>
+        <div>
+          <Card
+            title="Creative Design"
+            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
+          />
+          <Card
+            title="Easy to use"
+            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
+          />
+          <Card
+            title="Best user experience"
+            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
+          />
+        </div>
       </div>
     </section>
   );
