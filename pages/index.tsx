@@ -7,6 +7,7 @@ import About from "../components/About";
 import Feature from "../components/Features";
 import Interface from "../components/Interface";
 import Info from "../components/Info/index"
+import Team from "../components/Team";
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
       <Feature/>
       <Interface />
       <Info />
+      <Team />
 
     </div>
   );

@@ -1,0 +1,58 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/base/typography";
+@import "../../styles/abstracts/mixins";
+
+.team {
+  &__heading {
+    @include heading(60px);
+    margin: 60px auto;
+    color: $col-dark;
+
+    &-title {
+      @include title(23px);
+    }
+    &-desc {
+      color: $col-text;
+    }
+  }
+
+  &__cards{
+        @include grid-column(3, 370px);
+        column-gap: toRem(30px);
+
+      &-card{
+            height: toRem(580px);
+            @include border-radius(10px);
+            box-shadow: 0px 1px 10px $col-shadow-2;
+            text-align: center;
+            padding: toRem(29px);
+
+            &__name{
+                  @include h4;
+                  margin-top: toRem(71px);
+            }
+            &__role{
+                  @include h6;
+                  color: $col-text;
+            }
+
+            &__desc{
+                  color: $col-text;
+                  margin-bottom: toRem(43px);
+            }
+            &__social{
+                  @include grid-column(4, auto);
+                  align-items: center;
+
+                  & div{
+                      border-right: 1px solid #6C6C72;
+
+                      &:last-child{
+                            border: none;
+                      }
+                  }
+
+            }
+      }
+  }
+}
