@@ -10,15 +10,12 @@
 
 .feature {
   &__heading {
-    text-align: center;
-    width: toRem(601px);
+    @include heading(120px);
     margin: toRem(120px) auto;
     color: $col-white;
 
     &-title {
-      @include h4;
-      text-transform: uppercase;
-      margin-bottom: toRem(18px);
+      @include title(18px);
     }
   }
 
@@ -37,7 +34,6 @@
         @include h6;
         text-transform: uppercase;
         margin: toRem(18px) 0;
-
       }
     }
 
@@ -50,15 +46,14 @@
         justify-content: space-between;
         align-items: center;
         margin: toRem(100px) 0;
-       
       }
     }
   }
 
-  &__right{
-        text-align: right;
+  &__right {
+    text-align: right;
   }
-  &__left{
-        text-align: left;
+  &__left {
+    text-align: left;
   }
 }

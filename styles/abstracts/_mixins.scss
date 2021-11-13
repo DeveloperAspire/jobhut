@@ -103,6 +103,17 @@ $z-index: (
   }
 }
 
+@mixin heading($margin) {
+  text-align: center;
+  width: toRem(601px);
+  margin-bottom: toRem($margin);
+}
+@mixin title($margin){
+  @include h4;
+  text-transform: uppercase;
+  margin-bottom: toRem($margin);
+}
+
 @mixin position-absolute-center {
   position: absolute;
   top: 50%;
