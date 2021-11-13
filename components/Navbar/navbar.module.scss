@@ -19,7 +19,7 @@
       @include row;
       align-items: center;
       justify-content: space-between;
-      @include h6;
+      font-size: toRem(20px);
       & li {
         margin-right: toRem(40px);
         text-transform: uppercase;
