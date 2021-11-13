@@ -1,0 +1,143 @@
+@import "../abstracts/functions";
+
+@mixin h1 {
+  font-size: toRem(68px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: toRem(72px);
+  letter-spacing: 0.2px;
+}
+
+@mixin h2 {
+  font-size: toRem(48px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: toRem(66px);
+}
+
+@mixin h3 {
+  font-size: toRem(36px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: toRem(51px);
+  letter-spacing: 0.2px;
+}
+
+@mixin h3-2 {
+  font-size: toRem(34px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: toRem(51px);
+}
+
+@mixin h4 {
+  font-size: toRem(24px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: toRem(35px);
+  letter-spacing: 0.2px;
+}
+
+@mixin sub-one {
+  font-size: toRem(16px);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: toRem(25px);
+}
+
+@mixin sub-two {
+  font-size: toRem(14px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: toRem(22px);
+  letter-spacing: 0.2px;
+}
+
+@mixin body {
+  font-size: toRem(18px);
+  font-style: normal;
+  font-weight: normal;
+  line-height: toRem(27px);
+  letter-spacing: 0.2px;
+}
+
+@mixin body-one {
+  font-size: toRem(16px);
+  font-style: normal;
+  font-weight: normal;
+  line-height: toRem(25px);
+  letter-spacing: 0.2px;
+}
+
+@mixin body-two {
+  font-size: toRem(14px);
+  font-style: normal;
+  font-weight: normal;
+  line-height: toRem(22px);
+  letter-spacing: 0.2px;
+}
+
+@mixin body-three {
+  font-size: toRem(12px);
+  font-style: normal;
+  font-weight: normal;
+  line-height: toRem(20px);
+  letter-spacing: 0.2px;
+}
+
+@mixin body-three-2 {
+  font-size: toRem(12px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: toRem(20px);
+  letter-spacing: 0.2px;
+}
+
+@mixin body-three-3 {
+  font-size: toRem(12px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: toRem(20px);
+  letter-spacing: 0.2px;
+}
+
+@mixin body-two-3 {
+  font-size: toRem(14px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: toRem(24px);
+  letter-spacing: 0.2px;
+}
+
+@mixin body-two-4 {
+  font-size: toRem(14px);
+  font-style: normal;
+  font-weight: normal;
+  line-height: toRem(24px);
+  letter-spacing: 0.2px;
+}
+
+@mixin button-txt {
+  font-size: toRem(14px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: toRem(22px);
+  letter-spacing: 0.2px;
+}
+
+@mixin small {
+  font-size: toRem(10px);
+  line-height: toRem(20px);
+  letter-spacing: 0.2px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin caption {
+  font-style: normal;
+  font-weight: normal;
+  font-size: toRem(12px);
+  line-height: toRem(18px);
+  letter-spacing: 0.2px;
+}
