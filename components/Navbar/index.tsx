@@ -21,7 +21,7 @@ const Navbar: NextComponentType = () => {
           <li>Features</li>
           <li>Screenshot</li>
           <li>Blog</li>
-          <li>Download</li>
+          <button type="button" aria-label="download"> Download</button>
         </ul>
       </nav>
     </header>
