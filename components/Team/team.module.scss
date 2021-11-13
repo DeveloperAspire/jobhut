@@ -19,6 +19,7 @@
   &__cards {
     @include grid-column(3, 370px);
     column-gap: toRem(30px);
+    justify-content: center;
 
      &__pics{
             border: 5px solid $col-primary;
