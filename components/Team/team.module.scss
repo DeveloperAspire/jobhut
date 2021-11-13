@@ -16,43 +16,62 @@
     }
   }
 
-  &__cards{
-        @include grid-column(3, 370px);
-        column-gap: toRem(30px);
+  &__cards {
+    @include grid-column(3, 370px);
+    column-gap: toRem(30px);
 
-      &-card{
-            height: toRem(580px);
-            @include border-radius(10px);
-            box-shadow: 0px 1px 10px $col-shadow-2;
+     &__pics{
+            border: 5px solid $col-primary;
+            padding: toRem(7px);
+            border-radius: 50%;
+            height: toRem(198px);
+            width: toRem(198px);
             text-align: center;
-            padding: toRem(29px);
-
-            &__name{
-                  @include h4;
-                  margin-top: toRem(71px);
-            }
-            &__role{
-                  @include h6;
-                  color: $col-text;
-            }
-
-            &__desc{
-                  color: $col-text;
-                  margin-bottom: toRem(43px);
-            }
-            &__social{
-                  @include grid-column(4, auto);
-                  align-items: center;
-
-                  & div{
-                      border-right: 1px solid #6C6C72;
-
-                      &:last-child{
-                            border: none;
-                      }
-                  }
-
-            }
+            margin: 0 auto;
       }
+
+    &-card {
+      height: toRem(580px);
+      @include border-radius(10px);
+      box-shadow: 0px 1px 10px $col-shadow-2;
+      text-align: center;
+      padding: toRem(29px);
+
+     
+      &__name {
+        @include h4;
+        margin-top: toRem(71px);
+      }
+      &__role {
+        @include h6;
+        color: $col-text;
+      }
+
+      &__desc {
+        color: $col-text;
+        margin-bottom: toRem(43px);
+      }
+      &__social {
+        @include grid-column(4, auto);
+        align-items: center;
+
+        & div {
+          border-right: 1px solid #6c6c72;
+
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+    }
+
+
+//     &__ring{
+//         width: toRem(220px);
+//         height: toRem(4px);
+//         background-color: $col-primary;
+//         transform: rotate(-90deg);
+
+//   }
   }
 }

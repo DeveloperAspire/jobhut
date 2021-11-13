@@ -25,7 +25,7 @@ const Team: React.FC = () => {
 
         <div className={styles["team__cards"]}>
           <div className={styles["team__cards-card"]}>
-            <div className={styles["team__cards-pics"]}>
+            <div className={styles["team__cards__pics"]}>
               <Image src={One} alt="A woman" />
             </div>
             <h4 className={styles["team__cards-card__name"]}>LUIZZY LUIZZY</h4>
@@ -54,8 +54,8 @@ const Team: React.FC = () => {
           </div>
 
           <div className={styles["team__cards-card"]}>
-            <div>
-              <Image src={Three} alt="A woman" />
+            <div className={styles["team__cards__pics"]}>
+              <Image src={Two} alt="A Man smiling" />
             </div>
             <h4 className={styles["team__cards-card__name"]}>HENRY KAKA</h4>
             <h6 className={styles["team__cards-card__role"]}>FOUNDER/CEO</h6>
@@ -81,8 +81,8 @@ const Team: React.FC = () => {
           </div>
 
           <div className={styles["team__cards-card"]}>
-            <div>
-              <Image src={Two} alt="A woman" />
+            <div className={styles["team__cards__pics"]}>
+              <Image src={Three} alt="A woman" />
             </div>
             <h4 className={styles["team__cards-card__name"]}>
               RAPHAEL RAPHAEL
