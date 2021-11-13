@@ -24,7 +24,7 @@
   &__content {
     @include grid-column(2, auto);
     //     justify-content: space-between;
-    gap: toRem(70px);
+    column-gap: toRem(70px);
     align-items: flex-start;
 
     &-container {

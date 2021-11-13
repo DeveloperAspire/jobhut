@@ -1,0 +1,64 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/base/typography";
+@import "../../styles/abstracts/mixins";
+
+.section {
+  background: url("../../public/assets/images/background.svg") no-repeat center
+    center / cover;
+  border: 1px solid green;
+}
+
+.feature {
+  &__heading {
+    text-align: center;
+    width: toRem(601px);
+    margin: toRem(120px) auto;
+    color: $col-white;
+
+    &-title {
+      @include h4;
+      text-transform: uppercase;
+      margin-bottom: toRem(18px);
+    }
+  }
+
+  &__content {
+    &-card {
+      width: toRem(297px);
+      color: $col-white;
+      text-align: center;
+
+      &:first-child,
+      &:last-child {
+        margin: 0 auto;
+      }
+
+      &-title {
+        @include h6;
+        text-transform: uppercase;
+        margin: toRem(18px) 0;
+
+      }
+    }
+
+    &-grid {
+      @include grid-column(3, 1fr);
+      margin: toRem(52px) 0;
+
+      &-content {
+        @include column;
+        justify-content: space-between;
+        align-items: center;
+        margin: toRem(100px) 0;
+       
+      }
+    }
+  }
+
+  &__right{
+        text-align: right;
+  }
+  &__left{
+        text-align: left;
+  }
+}
