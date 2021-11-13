@@ -1,3 +1,35 @@
 @import "../../styles/abstracts/variables";
 @import "../../styles/base/typography";
 @import "../../styles/abstracts/mixins";
+
+.about {
+  @include grid-center;
+  margin-top: toRem(200px);
+
+  &__heading {
+    text-align: center;
+    width: toRem(600px);
+    margin-bottom: toRem(60px);
+
+    &-title {
+      @include h4;
+      text-transform: uppercase;
+      margin-bottom: toRem(18px);
+    }
+    &-desc {
+      color: $col-text;
+    }
+  }
+
+  &__content {
+    @include grid-column(2, auto);
+    //     justify-content: space-between;
+    gap: toRem(70px);
+    align-items: flex-start;
+
+    &-container {
+      @include grid-row(3, auto);
+      gap: toRem(40px);
+    }
+  }
+}

@@ -9,8 +9,8 @@ const About: NextComponentType = () => {
   return (
     <section className={styles.about}>
       <div className={styles["about__heading"]}>
-        <h4>About our App</h4>
-        <p>
+        <h4 className={styles["about__heading-title"]}>About our App</h4>
+        <p className={styles["about__heading-desc"]}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
           ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus
           amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus
@@ -23,7 +23,7 @@ const About: NextComponentType = () => {
           <Image src={Phone} alt="A Hand holding a Phone" />
         </div>
 
-        <div>
+        <div className={styles['about__content-container']}>
           <Card
             title="Creative Design"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."

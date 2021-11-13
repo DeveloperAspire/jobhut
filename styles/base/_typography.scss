@@ -44,11 +44,17 @@
   line-height: toRem(38px);
 }
 @mixin h6 {
-  font-size: toRem(28px);
+  font-size: toRem(20px);
   font-weight: 600;
   font-style: normal;
   line-height: toRem(30px);
 }
+// @mixin h6-2 {
+//   font-size: toRem(20px);
+//   font-weight: 600;
+//   font-style: normal;
+//   line-height: toRem(30px);
+// }
 
 @mixin sub-one {
   font-size: toRem(16px);
