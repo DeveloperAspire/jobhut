@@ -9,10 +9,10 @@
 }
 
 @mixin h2 {
-  font-size: toRem(48px);
+  font-size: toRem(49px);
   font-style: normal;
-  font-weight: 600;
-  line-height: toRem(66px);
+  font-weight: 700;
+  line-height: toRem(63px);
 }
 
 @mixin h3 {
@@ -31,11 +31,25 @@
 }
 
 @mixin h4 {
-  font-size: toRem(24px);
+  font-size: toRem(31px);
   font-style: normal;
-  font-weight: 500;
-  line-height: toRem(35px);
-  letter-spacing: 0.2px;
+  font-weight: 700;
+  line-height: toRem(47px);
+}
+
+@mixin h5 {
+
+font-size: toRem(25px);
+font-style: normal;
+font-weight: toRem(600);
+line-height: toRem(38px);
+
+}
+@mixin h6 {
+  font-size: toRem(20px);
+  font-weight: 600;
+  font-style: normal;
+  line-height: toRem(30px);
 }
 
 @mixin sub-one {
