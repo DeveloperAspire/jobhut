@@ -38,15 +38,13 @@
 }
 
 @mixin h5 {
-
-font-size: toRem(25px);
-font-style: normal;
-font-weight: toRem(600);
-line-height: toRem(38px);
-
+  font-size: toRem(25px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: toRem(38px);
 }
 @mixin h6 {
-  font-size: toRem(20px);
+  font-size: toRem(28px);
   font-weight: 600;
   font-style: normal;
   line-height: toRem(30px);

@@ -1,0 +1,56 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/base/typography";
+@import "../../styles/abstracts/mixins";
+
+.hero {
+  @include grid-column(2, 1fr);
+  align-items: center;
+  margin-top: toRem(76px);
+
+  &__text-container {
+    width: toRem(570px);
+    height: toRem(535px);
+    border: 18px solid $col-primary;
+    padding:toRem(50px) 0;
+    position: relative;
+
+    &-child {
+      
+      width: toRem(570px);
+      height: 432px;
+      padding: toRem(40px) toRem(0px) toRem(40px) toRem(30px);
+      transform: translateX(-65px);
+      z-index: 2;
+      background-color: $col-white;
+
+      &-container{
+            width: toRem(521px);
+            margin: 0 auto;
+      }
+
+      &__heading{
+            @include h2;
+            color: $col-primary;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            margin-bottom: toRem(18px);
+      }
+
+      &__text{
+            margin-bottom: toRem(52px);
+            color: $col-text;
+      }
+      &__action{
+            margin-bottom: toRem(6px);
+            @include h5;
+            text-transform: uppercase;
+      }
+      &__button{
+            @include grid-column(2, 149px);
+            align-items: center;
+            gap: toRem(14px);
+      }
+    }
+  }
+}

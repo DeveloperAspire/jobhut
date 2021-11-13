@@ -20,13 +20,13 @@ $z-index: (
 @mixin z-index($key) {
   z-index: z-index($key);
 }
-// Z INDEX
+// // Z INDEX
 
-@mixin deskTopFirst($media) {
-  @media screen and (max-width: math.div($media, 16)+rem) {
-    @content;
-  }
-}
+// @mixin deskTopFirst($media) {
+//   @media screen and (max-width: math.div($media, 16)+rem) {
+//     @content;
+//   }
+// }
 
 // MOBILE FIRST MEDIA QUERY
 @mixin respond($breakpoint) {
