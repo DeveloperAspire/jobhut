@@ -6,6 +6,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Feature from "../components/Features";
 import Interface from "../components/Interface";
+import Info from "../components/Info/index"
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,8 @@ const Home: NextPage = () => {
       <About/>
       <Feature/>
       <Interface />
+      <Info />
+
     </div>
   );
 };

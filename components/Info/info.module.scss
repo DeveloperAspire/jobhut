@@ -1,0 +1,21 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/base/typography";
+@import "../../styles/abstracts/mixins";
+
+.section {
+  background: url("../../public/assets/images/background.svg") no-repeat center
+    center / cover;
+  padding: toRem(120px) 0;
+  height: 447px;
+ 
+
+  &__heading{
+        @include heading(0px);
+         margin: 0 auto;
+         color: $col-white;
+         
+         &-title{
+         @include title(23px);
+         }
+  }
+}
