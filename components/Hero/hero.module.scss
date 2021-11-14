@@ -54,3 +54,11 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+      .hero{
+          
+            @include grid-column(1, 1fr);
+      }
+      
+}

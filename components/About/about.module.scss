@@ -30,3 +30,19 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .about{
+    &__content {
+    @include grid-column(1, auto);
+    //     justify-content: space-between;
+    column-gap: toRem(70px);
+    align-items: flex-start;
+
+    &-container {
+      @include grid-row(3, auto);
+      gap: toRem(40px);
+    }
+  }
+  }
+}

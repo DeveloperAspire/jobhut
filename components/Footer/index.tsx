@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
         <div className={styles.contact}>
           <div className={styles["contact__container"]}>
             <div className={styles["contact__image"]}>
-              <Image src={Message} alt="A mail icon" />
+              <Image src={Message} alt="A mail icon"/>
             </div>
             <p className={styles["contact__text"]}>info@youremail.com</p>
           </div>

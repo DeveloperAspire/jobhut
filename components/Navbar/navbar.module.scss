@@ -39,3 +39,12 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .header{
+
+    &__navbar{
+      display: none;
+    }
+  }
+}

@@ -24,4 +24,15 @@
         justify-content: center;
         margin-top: toRem(60px);
   }
+
+
+  @media (max-width: 600px) {
+      &__blog-cards{
+        @include grid-column(1, 343px);
+        column-gap: toRem(30px);
+        justify-content: center;
+        margin-top: toRem(60px);
+  }
 }
+}
+

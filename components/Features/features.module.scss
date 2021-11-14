@@ -58,3 +58,42 @@
     text-align: left;
   }
 }
+
+
+@media (max-width: 600px) {
+  .feature{
+
+    &__content {
+    &-card {
+      width: toRem(297px);
+      color: $col-white;
+      text-align: center;
+
+      &:first-child,
+      &:last-child {
+        margin: 0 auto;
+      }
+
+      &-title {
+        @include h6;
+        text-transform: uppercase;
+        margin: toRem(18px) 0;
+      }
+    }
+
+    &-grid {
+      @include grid-column(1, 1fr);
+      margin: toRem(52px) 0;
+
+      &-content {
+        @include column;
+        justify-content: space-between;
+        align-items: center;
+        margin: toRem(100px) 0;
+      }
+    }
+  }
+
+
+  }
+}
