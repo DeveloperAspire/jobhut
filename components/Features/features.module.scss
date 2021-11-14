@@ -9,10 +9,9 @@
 }
 
 @media (max-width: 600px) {
-  .section{
-     padding: toRem(60px) 0;
+  .section {
+    padding: toRem(60px) 0;
   }
-  
 }
 
 .feature {
@@ -36,7 +35,6 @@
       &:first-child,
       &:last-child {
         margin: 0 auto;
-
       }
 
       &-title {
@@ -69,6 +67,10 @@
 
 @media (max-width: 600px) {
   .feature {
+    &-img {
+      width: toRem(214px);
+      margin: 0 auto;
+    }
     &__heading {
       &-title {
         @include title(18px);

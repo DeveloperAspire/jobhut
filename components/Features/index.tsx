@@ -56,7 +56,9 @@ const Feature: React.FC = () => {
                 </div>
               </div>
 
-              <Image src={Phone} alt="An Illustration of a Phone" />
+              <div className={styles['feature-img']}>
+                <Image src={Phone} alt="An Illustration of a Phone" />
+              </div>
 
               {/* Fourth box */}
 
