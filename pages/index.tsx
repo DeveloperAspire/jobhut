@@ -6,12 +6,11 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Feature from "../components/Features";
 import Interface from "../components/Interface";
-import Info from "../components/Info/index"
+import Info from "../components/Info/index";
 import Team from "../components/Team";
 import Customers from "../components/Customers";
 import Blog from "../components/Blog";
-import Footer from '../components/Footer/index'
-import Carousel from "../components/Carousel";
+import Footer from "../components/Footer/index";
 const Home: NextPage = () => {
   return (
     <div>
@@ -22,17 +21,15 @@ const Home: NextPage = () => {
       </Head>
 
       <Navbar />
-      <Hero/>
-      <Carousel/>
-      <About/>
-      <Feature/>
+      <Hero />
+      <About />
+      <Feature />
       <Interface />
       <Info />
       <Team />
       <Customers />
       <Blog />
       <Footer />
-
     </div>
   );
 };

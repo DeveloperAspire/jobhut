@@ -1,11 +1,12 @@
 import styles from "./interface.module.scss";
 import Container from "../Container";
+import Carousel from "./Carousel";
 import Google from "../../public/assets/images/google.svg";
 import Apple from "../../public/assets/images/apple.svg";
 import Image from "next/image";
-import Download from '../../public/assets/icons/download.svg'
-import Thumbs from '../../public/assets/icons/thumbs.svg'
-import Star from '../../public/assets/icons/star.svg'
+import Download from "../../public/assets/icons/download.svg";
+import Thumbs from "../../public/assets/icons/thumbs.svg";
+import Star from "../../public/assets/icons/star.svg";
 
 const Interface: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ const Interface: React.FC = () => {
             Ullamcorper risus tempor, ac nunc libero urna, feugiat.
           </p>
         </div>
-
+        <Carousel />
         <div className={styles["interface__action"]}>
           <h5 className={styles["interface__action-title"]}>
             Download app Now
