@@ -1,12 +1,12 @@
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
-import Image from 'next/image'
+import Image from "next/image";
 import Container from "../../Container";
 import styles from "./carousel.module.scss";
-import Ann from '../../../public/assets/images/ann.svg'
-import Henry from '../../../public/assets/images/henry.svg'
-import Lucy from '../../../public/assets/images/raphael.svg'
+import Ann from "../../../public/assets/images/ann.svg";
+import Henry from "../../../public/assets/images/henry.svg";
+import Lucy from "../../../public/assets/images/raphael.svg";
 const Carousel = () => {
   return (
     <Container>
