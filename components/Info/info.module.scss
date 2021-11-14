@@ -7,22 +7,41 @@
     center / cover;
   padding: toRem(120px) 0;
   height: 447px;
- 
 
-  &__heading{
-        @include heading(0px);
-         margin: 0 auto;
-         color: $col-white;
-         
-         &-title{
-         @include title(23px);
-         }
+  &__heading {
+    @include heading(0px);
+    margin: 0 auto;
+    color: $col-white;
+
+    &-title {
+      @include title(23px);
+    }
   }
 
- &__demo{
-     text-align: center;
-      transform: translateY(-50px);
+  &__demo {
+    text-align: center;
+    transform: translateY(-50px);
+    padding: 0;
+  }
+
+  @media (max-width: 600px) {
+    padding: toRem(40px) 1rem;
+
+    &__heading {
+      @include heading(0px);
+      margin: 0 auto;
+      color: $col-white;
+
+      &-title {
+        @include title(23px);
+        font-size: 25px;
+      }
+    }
+
+    &__demo {
+      text-align: center;
+      transform: translateY(50px);
       padding: 0;
+    }
   }
- 
 }
