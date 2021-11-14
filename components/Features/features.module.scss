@@ -12,6 +12,7 @@
   &__heading {
     @include heading(120px);
     margin: 0 auto;
+    margin-bottom: toRem(63px);
     color: $col-white;
 
     &-title {
