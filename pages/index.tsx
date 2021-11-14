@@ -9,7 +9,7 @@ import Interface from "../components/Interface";
 import Info from "../components/Info/index"
 import Team from "../components/Team";
 import Customers from "../components/Customers";
-
+import Blog from "../components/Blog";
 const Home: NextPage = () => {
   return (
     <div>
@@ -27,6 +27,7 @@ const Home: NextPage = () => {
       <Info />
       <Team />
       <Customers />
+      <Blog />
 
     </div>
   );

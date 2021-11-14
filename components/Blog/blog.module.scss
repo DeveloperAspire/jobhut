@@ -1,0 +1,19 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/base/typography";
+@import "../../styles/abstracts/mixins";
+
+.section {
+  padding: toRem(120px) 0;
+  height: 447px;
+ 
+
+  &__heading{
+        @include heading(0px);
+         margin: 0 auto;
+         color: $col-dark;
+         
+         &-title{
+         @include title(23px);
+         }
+  }
+}
