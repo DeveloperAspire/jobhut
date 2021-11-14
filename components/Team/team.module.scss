@@ -8,7 +8,7 @@
 
   &__heading {
     @include heading(60px);
-    margin: 120px auto;
+    margin: toRem(120px) auto;
     color: $col-dark;
 
     &-title {
@@ -79,13 +79,25 @@
   }
 
   @media (max-width: 600px) {
+    padding-top: toRem(20px);
+
+    &__heading {
+      margin: toRem(60px) auto;
+
+      &-title {
+        @include title(23px);
+        font-size: 25px;
+      }
+      &-desc {
+        color: $col-text;
+        font-size: toRem(16px);
+      }
+    }
     &__cards {
       @include grid-column(1, 343px);
-      column-gap: toRem(30px);
+      row-gap: toRem(30px);
       justify-content: center;
       margin-bottom: toRem(60px);
     }
   }
 }
-
-
