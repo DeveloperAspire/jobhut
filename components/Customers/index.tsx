@@ -1,5 +1,5 @@
 import styles from "./customers.module.scss";
-
+import Carousel from './Carousel'
 const Customers: React.FC= () => {
   return (
     <section className={styles.section}>
@@ -14,6 +14,8 @@ const Customers: React.FC= () => {
           tempor, ac nunc libero urna, feugiat.
         </p>
       </div>
+
+ <Carousel />
     </section>
   );
 };

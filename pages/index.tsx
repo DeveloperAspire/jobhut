@@ -11,6 +11,7 @@ import Team from "../components/Team";
 import Customers from "../components/Customers";
 import Blog from "../components/Blog";
 import Footer from '../components/Footer/index'
+import Carousel from "../components/Carousel";
 const Home: NextPage = () => {
   return (
     <div>
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
 
       <Navbar />
       <Hero/>
+      <Carousel/>
       <About/>
       <Feature/>
       <Interface />

@@ -1,0 +1,36 @@
+@import "../../../styles/abstracts/variables";
+@import "../../../styles/base/typography";
+@import "../../../styles/abstracts/mixins";
+
+.card {
+  margin: 0 auto;
+  background-color: $col-white;
+  max-width: toRem(770px);
+  height: toRem(375px);
+  @include border-radius(10px);
+  margin-top: toRem(60px);
+  text-align: center;
+  padding: toRem(40px);
+
+  &__pics {
+    text-align: center;
+    margin:  auto;
+    width: toRem(90px);
+    height: toRem(90px);
+
+  }
+
+  &__name {
+    @include h4;
+    margin-top: toRem(20px);
+  }
+  &__role {
+    @include h6;
+    color: $col-text;
+  }
+
+  &__desc {
+    color: $col-text;
+//     margin-bottom: toRem(43px);
+  }
+}
