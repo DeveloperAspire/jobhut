@@ -1,0 +1,103 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/base/typography";
+@import "../../styles/abstracts/mixins";
+
+.footer {
+  background: url("../../public/assets/images/background.svg") no-repeat center
+    center / cover;
+  padding: toRem(120px) 0 0 0;
+  color: $col-white;
+}
+
+.container {
+  @include row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: toRem(66px);
+
+  &-grid {
+    @include grid-column(2, 334px);
+    column-gap: toRem(100px);
+  }
+
+  &__info {
+    &-logo {
+      @include h4;
+      text-transform: uppercase;
+    }
+    &-desc {
+      margin-bottom: toRem(40px);
+    }
+
+    &-social {
+      @include grid-column(4, 90px);
+      align-items: center;
+      justify-content: flex-start;
+
+      & div {
+        border-right: 1px solid $col-white;
+        @include grid-center;
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+
+    &-link {
+      &-title {
+        @include h5;
+        text-transform: uppercase;
+      }
+      & a {
+        display: block;
+        margin-top: toRem(11px);
+        color: $col-white;
+      }
+    }
+  }
+
+  &__news {
+    &-title {
+      @include h5;
+      text-transform: uppercase;
+      margin-bottom: toRem(11px);
+    }
+    &-desc {
+      margin-bottom: toRem(33px);
+    }
+    &-form {
+      height: toRem(50px);
+      max-width: toRem(398px);
+      width: 100%;
+      background-color: $col-white;
+      @include row;
+      justify-content: space-between;
+      align-items: center;
+
+      & input {
+        border: none;
+        padding: 0 toRem(16px);
+      }
+
+      &__button {
+        background-color: $col-primary;
+        width: toRem(52px);
+        height: toRem(46px);
+        @include border-radius(4px);
+      }
+    }
+  }
+}
+
+.copy{
+      padding: toRem(30px);
+      text-align: center;
+      border-top: 1px solid $col-white;
+      @include row;
+      justify-content: center;
+
+      & p{
+            margin-left: toRem(20px);
+      }
+}
