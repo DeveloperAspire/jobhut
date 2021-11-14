@@ -3,11 +3,6 @@ import Container from "../Container";
 import One from "../../public/assets/images/luzzy.svg";
 import Two from "../../public/assets/images/henry.svg";
 import Three from "../../public/assets/images/raphael.svg";
-import Facebook from "../../public/assets/icons/facebook.svg";
-import Instagram from "../../public/assets/icons/instagram.svg";
-import Twitter from "../../public/assets/icons/twitter.svg";
-import Youtube from "../../public/assets/icons/youtube.svg";
-import Image from "next/image";
 
 import Card from "./Card";
 

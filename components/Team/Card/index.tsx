@@ -1,5 +1,4 @@
 import styles from './card.module.scss'
-import One from "../../../public/assets/images/luzzy.svg";
 import Facebook from "../../../public/assets/icons/facebook.svg";
 import Instagram from "../../../public/assets/icons/instagram.svg";
 import Twitter from "../../../public/assets/icons/twitter.svg";
