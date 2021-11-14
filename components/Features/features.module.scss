@@ -8,6 +8,13 @@
   padding: toRem(120px) 0;
 }
 
+@media (max-width: 600px) {
+  .section{
+     padding: toRem(60px) 0;
+  }
+  
+}
+
 .feature {
   &__heading {
     @include heading(120px);
@@ -22,13 +29,14 @@
 
   &__content {
     &-card {
-      width: toRem(297px);
+      width: toRem(248px);
       color: $col-white;
       text-align: center;
 
       &:first-child,
       &:last-child {
         margin: 0 auto;
+
       }
 
       &-title {
@@ -59,41 +67,44 @@
   }
 }
 
-
 @media (max-width: 600px) {
-  .feature{
+  .feature {
+    &__heading {
+      &-title {
+        @include title(18px);
+        font-size: 25px;
+      }
+    }
 
     &__content {
-    &-card {
-      width: toRem(297px);
-      color: $col-white;
-      text-align: center;
+      &-card {
+        width: toRem(297px);
+        color: $col-white;
+        text-align: center;
 
-      &:first-child,
-      &:last-child {
-        margin: 0 auto;
+        &:first-child,
+        &:last-child {
+          margin: 2rem auto;
+        }
+
+        &-title {
+          @include h6;
+          text-transform: uppercase;
+          margin: toRem(18px) 0;
+        }
       }
 
-      &-title {
-        @include h6;
-        text-transform: uppercase;
-        margin: toRem(18px) 0;
+      &-grid {
+        @include grid-column(1, 1fr);
+        margin: toRem(52px) 0;
+
+        &-content {
+          @include column;
+          justify-content: space-between;
+          align-items: center;
+          margin: toRem(10px) 0;
+        }
       }
     }
-
-    &-grid {
-      @include grid-column(1, 1fr);
-      margin: toRem(52px) 0;
-
-      &-content {
-        @include column;
-        justify-content: space-between;
-        align-items: center;
-        margin: toRem(100px) 0;
-      }
-    }
-  }
-
-
   }
 }
