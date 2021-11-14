@@ -1,4 +1,6 @@
 import styles from "./info.module.scss";
+import Demo from "../../public/assets/images/preview.svg";
+import Image from "next/image";
 
 const Info: React.FC = () => {
   return (
@@ -13,6 +15,10 @@ const Info: React.FC = () => {
           amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus
           tempor, ac nunc libero urna, feugiat.
         </p>
+      </div>
+
+      <div className={styles["section__demo"]}>
+        <Image src={Demo} alt="Preview demo of the application" />
       </div>
     </section>
   );

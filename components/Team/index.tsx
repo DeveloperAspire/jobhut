@@ -3,7 +3,6 @@ import Container from "../Container";
 import One from "../../public/assets/images/luzzy.svg";
 import Two from "../../public/assets/images/henry.svg";
 import Three from "../../public/assets/images/raphael.svg";
-
 import Card from "./Card";
 
 const Team: React.FC = () => {

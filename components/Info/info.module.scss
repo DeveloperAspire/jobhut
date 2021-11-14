@@ -18,4 +18,11 @@
          @include title(23px);
          }
   }
+
+ &__demo{
+     text-align: center;
+      transform: translateY(-50px);
+      padding: 0;
+  }
+ 
 }
