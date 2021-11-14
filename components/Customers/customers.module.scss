@@ -7,15 +7,24 @@
     center / cover;
   padding: toRem(120px) 0;
   height: 876px;
- 
 
-  &__heading{
-        @include heading(0px);
-         margin: 0 auto;
-         color: $col-white;
-         
-         &-title{
-         @include title(23px);
-         }
+  &__heading {
+    @include heading(0px);
+    margin: 0 auto;
+    color: $col-white;
+
+    &-title {
+      @include title(23px);
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: toRem(60px) 1rem toRem(30px) 1rem;
+
+    &__heading {
+      &-title {
+        font-size: 25px;
+      }
+    }
   }
 }

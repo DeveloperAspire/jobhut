@@ -14,10 +14,9 @@
 
   &__pics {
     text-align: center;
-    margin:  auto;
+    margin: auto;
     width: toRem(90px);
     height: toRem(90px);
-
   }
 
   &__name {
@@ -31,6 +30,15 @@
 
   &__desc {
     color: $col-text;
-//     margin-bottom: toRem(43px);
+    //     margin-bottom: toRem(43px);
+  }
+
+  @media (max-width: 600px) {
+    height: toRem(500px);
+
+    &__desc {
+      color: $col-text;
+      margin-bottom: toRem(43px);
+    }
   }
 }
