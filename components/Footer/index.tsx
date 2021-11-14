@@ -8,7 +8,7 @@ import Copy from '../../public/assets/icons/copy.svg'
 import Image from "next/image";
 
 import Container from "../Container";
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <Container>

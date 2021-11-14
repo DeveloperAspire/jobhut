@@ -7,7 +7,7 @@ import Download from '../../public/assets/icons/download.svg'
 import Thumbs from '../../public/assets/icons/thumbs.svg'
 import Star from '../../public/assets/icons/star.svg'
 
-const Interface = () => {
+const Interface: React.FC = () => {
   return (
     <Container>
       <section className={styles.interface}>
@@ -47,13 +47,13 @@ const Interface = () => {
           </div>
 
           <div className={styles["interface__feedback-card"]}>
-            <Image src={Download} alt="a download icon" />
+            <Image src={Thumbs} alt="a download icon" />
             <p className={styles["interface__feedback-card-number"]}>29852</p>
             <p className={styles["interface__feedback-card-name"]}>Likes</p>
           </div>
 
           <div className={styles["interface__feedback-card"]}>
-            <Image src={Download} alt="a download icon" />
+            <Image src={Star} alt="a download icon" />
             <p className={styles["interface__feedback-card-number"]}>1500</p>
             <p className={styles["interface__feedback-card-name"]}>
               Star Rating

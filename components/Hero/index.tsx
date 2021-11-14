@@ -1,4 +1,3 @@
-import { NextComponentType } from "next";
 import Image from "next/image";
 import HeroImg from "../../public/assets/images/herophone.svg";
 import Google from "../../public/assets/images/google.svg";
@@ -6,7 +5,7 @@ import Apple from "../../public/assets/images/apple.svg";
 import styles from "./hero.module.scss";
 import Container from "../Container";
 
-const Hero: NextComponentType = () => {
+const Hero: React.FC= () => {
   return (
     <Container>
       <main className={styles.hero}>
@@ -34,10 +33,7 @@ const Hero: NextComponentType = () => {
         </div>
 
         <div>
-          <Image
-            src={HeroImg}
-            alt="Logo of Jobhut"
-          />
+          <Image src={HeroImg} alt="Logo of Jobhut" />
         </div>
       </main>
     </Container>

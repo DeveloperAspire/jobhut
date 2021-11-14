@@ -1,6 +1,6 @@
 import styles from "./customers.module.scss";
 
-const Customers = () => {
+const Customers: React.FC= () => {
   return (
     <section className={styles.section}>
       <div className={styles["section__heading"]}>

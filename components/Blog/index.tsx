@@ -5,7 +5,7 @@ import Snap from "../../public/assets/images/snapchat.svg";
 import Global from "../../public/assets/images/global.svg";
 import Join from "../../public/assets/images/join.svg";
 
-const Blog = () => {
+const Blog: React.FC = () => {
   return (
     <Container>
       <section className={styles.section}>

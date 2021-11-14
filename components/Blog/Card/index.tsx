@@ -1,4 +1,3 @@
-import Snap from "../../../public/assets/images/snapchat.svg";
 import styles from "./card.module.scss";
 import Image from "next/image";
 
