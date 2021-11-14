@@ -3,6 +3,7 @@
 @import "../../styles/abstracts/mixins";
 
 .team {
+ 
   &__heading {
     @include heading(60px);
     margin: 60px auto;
@@ -20,6 +21,7 @@
     @include grid-column(3, 370px);
     column-gap: toRem(30px);
     justify-content: center;
+    margin-bottom: toRem(60px);
 
      &__pics{
             border: 4px solid $col-primary;
