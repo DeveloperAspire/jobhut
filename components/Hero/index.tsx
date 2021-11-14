@@ -5,7 +5,7 @@ import Apple from "../../public/assets/images/apple.svg";
 import styles from "./hero.module.scss";
 import Container from "../Container";
 
-const Hero: React.FC= () => {
+const Hero: React.FC = () => {
   return (
     <Container>
       <main className={styles.hero}>
@@ -25,6 +25,7 @@ const Hero: React.FC= () => {
               </h5>
               <div className={styles["hero__text-container-child__button"]}>
                 <Image src={Google} alt="Logo of Jobhut" />
+
                 <Image src={Apple} alt="Logo of Jobhut" />
               </div>
               <div></div>
@@ -32,9 +33,7 @@ const Hero: React.FC= () => {
           </div>
         </div>
 
-        <div>
-          <Image src={HeroImg} alt="Logo of Jobhut" />
-        </div>
+        <Image src={HeroImg} alt="Logo of Jobhut" />
       </main>
     </Container>
   );

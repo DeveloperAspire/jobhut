@@ -11,11 +11,10 @@
     width: toRem(570px);
     height: toRem(535px);
     border: 18px solid $col-primary;
-    padding:toRem(50px) 0;
+    padding: toRem(50px) 0;
     position: relative;
 
     &-child {
-      
       width: toRem(570px);
       height: 432px;
       padding: toRem(40px) toRem(0px) toRem(40px) toRem(30px);
@@ -23,42 +22,92 @@
       z-index: 2;
       background-color: $col-white;
 
-      &-container{
-            width: toRem(521px);
-            margin: 0 auto;
+      &-container {
+        width: toRem(521px);
+        margin: 0 auto;
       }
 
-      &__heading{
-            @include h2;
-            color: $col-primary;
-            padding: 0;
-            margin: 0;
-            text-align: left;
-            margin-bottom: toRem(18px);
+      &__heading {
+        @include h2;
+        color: $col-primary;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        margin-bottom: toRem(18px);
       }
 
-      &__text{
-            margin-bottom: toRem(52px);
-            color: $col-text;
+      &__text {
+        margin-bottom: toRem(52px);
+        color: $col-text;
       }
-      &__action{
-            margin-bottom: toRem(6px);
-            @include h5;
-            text-transform: uppercase;
+      &__action {
+        margin-bottom: toRem(6px);
+        @include h5;
+        text-transform: uppercase;
       }
-      &__button{
-            @include grid-column(2, 149px);
-            align-items: center;
-            gap: toRem(14px);
+      &__button {
+        @include grid-column(2, 149px);
+        align-items: center;
+        gap: toRem(14px);
       }
     }
   }
 }
 
 @media (max-width: 600px) {
-      .hero{
-          
-            @include grid-column(1, 1fr);
+  .hero {
+    @include grid-column(1, 1fr);
+    row-gap: toRem(50px);
+
+    &__text-container {
+      width: toRem(323px);
+      height: toRem(358px);
+      border: 10px solid $col-primary;
+      padding: toRem(10px) 0;
+      position: relative;
+
+      &-child {
+        width: toRem(323px);
+        height: toRem(318px);
+        padding: toRem(10px) toRem(0px) toRem(10px) toRem(30px);
+        transform: translateX(-40px);
+        z-index: 2;
+        background-color: $col-white;
+
+        &-container {
+          width: toRem(323px);
+          margin: 0 auto;
+        }
+
+        &__heading {
+          @include h5;
+          color: $col-primary;
+          padding: 0;
+          margin: 0;
+          text-align: left;
+          margin-bottom: toRem(16px);
+        }
+
+        &__text {
+          margin-bottom: toRem(20px);
+          color: $col-text;
+          font-size: toRem(16px);
+        }
+        &__action {
+          margin-bottom: toRem(6px);
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+        &__button {
+          @include grid-column(2, 108px);
+          align-items: center;
+          gap: toRem(14px);
+        }
       }
+
       
+    }
+
+   
+  }
 }

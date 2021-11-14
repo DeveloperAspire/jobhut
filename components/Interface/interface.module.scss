@@ -63,4 +63,35 @@
       }
     }
   }
+
+  // MEDIA QUERIES
+
+  @media (max-width: 600px) {
+    &__feedback {
+      max-width: toRem(570px);
+      width: 100%;
+      margin-top: toRem(59px);
+      @include grid-column(1, 170px);
+      column-gap: toRem(30px);
+
+      &-card {
+        max-width: toRem(170px);
+        width: 100%;
+        height: toRem(178px);
+        @include grid-center;
+        background-color: $col-primary;
+        @include border-radius(10px);
+        color: $col-white;
+        padding: toRem(20px) 0;
+
+        &-number {
+          @include h5;
+        }
+
+        &-name {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
 }
