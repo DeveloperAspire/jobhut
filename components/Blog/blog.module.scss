@@ -16,4 +16,11 @@
          @include title(23px);
          }
   }
+
+  &__blog-cards{
+        @include grid-column(3, 370px);
+        column-gap: toRem(30px);
+        justify-content: center;
+        margin-top: toRem(60px);
+  }
 }

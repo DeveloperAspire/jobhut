@@ -19,7 +19,11 @@ const Blog = () => {
               </p>
             </div>
 
-            <Card />
+            <div className={styles["section__blog-cards"]}>
+              <Card />
+              <Card />
+              <Card />
+            </div>
           </section>
         </Container>
       );
