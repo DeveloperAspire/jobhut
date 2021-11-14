@@ -3,7 +3,7 @@ import { NextComponentType } from "next";
 import styles from "./about.module.scss";
 import Phone from "../../public/assets/images/handphone.svg";
 import Image from "next/image";
-import Card from "../Card";
+import Card from "./Card";
 import Container from "../Container";
 
 const About: NextComponentType = () => {

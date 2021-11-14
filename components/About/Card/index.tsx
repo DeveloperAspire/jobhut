@@ -1,5 +1,5 @@
 import { NextComponentType } from "next";
-import Success from "../../public/assets/icons/success.svg";
+import Success from "../../../public/assets/icons/success.svg";
 import Image from "next/image";
 // import Icon from '../../utils/Icon/index'
 import styles from "./card.module.scss";
