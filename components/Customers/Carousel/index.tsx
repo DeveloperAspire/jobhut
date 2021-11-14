@@ -7,7 +7,8 @@ import styles from "./carousel.module.scss";
 import Ann from "../../../public/assets/images/ann.svg";
 import Henry from "../../../public/assets/images/henry.svg";
 import Lucy from "../../../public/assets/images/raphael.svg";
-const Carousel = () => {
+
+const Carousel: React.FC = () => {
   return (
     <Container>
       <Swiper
