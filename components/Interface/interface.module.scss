@@ -5,6 +5,7 @@
 .interface {
   margin: 0 auto;
   padding: toRem(120px) 0;
+  color: $col-dark;
 
   &__heading {
     @include heading(60px, 625px);

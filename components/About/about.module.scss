@@ -5,6 +5,7 @@
 .about {
   @include grid-center;
   margin-top: toRem(200px);
+  color: $col-dark;
 
   &__heading {
     @include heading(60px);
