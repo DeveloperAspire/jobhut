@@ -3,8 +3,10 @@ import facebook from "../../public/assets/icon-alt/FB.svg";
 import twitter from "../../public/assets/icon-alt/TWIT.svg";
 import youtube from "../../public/assets/icon-alt/YOU.svg";
 import instagram from "../../public/assets/icon-alt/INSTA.svg";
-import Send from '../../public/assets/icons/send.svg'
-import Copy from '../../public/assets/icons/copy.svg'
+import Send from "../../public/assets/icons/send.svg";
+import Copy from "../../public/assets/icons/copy.svg";
+import Message from "../../public/assets/icons/message.svg";
+import Call from "../../public/assets/icons/call.svg";
 import Image from "next/image";
 
 import Container from "../Container";
@@ -12,6 +14,21 @@ const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <Container>
+        <div className={styles.contact}>
+          <div className={styles["contact__container"]}>
+            <div className={styles["contact__image"]}>
+              <Image src={Message} alt="A mail icon" />
+            </div>
+            <p className={styles["contact__text"]}>info@youremail.com</p>
+          </div>
+
+          <div className={styles["contact__container"]}>
+            <div className={styles["contact__image"]}>
+              <Image src={Call} alt="A Telephone icon" />
+            </div>
+            <p className={styles["contact__text"]}>+880 321 655 9985</p>
+          </div>
+        </div>
         <div className={styles.container}>
           <div className={styles["container-grid"]}>
             <div className={styles["container__info"]}>

@@ -3,10 +3,10 @@
 @import "../../styles/abstracts/mixins";
 
 .footer {
-  background: url("../../public/assets/images/background.svg") no-repeat center
-    center / cover;
-  padding: toRem(120px) 0 0 0;
+  background-color:  #232233;
   color: $col-white;
+
+  
 }
 
 .container {
@@ -74,6 +74,7 @@
       @include row;
       justify-content: space-between;
       align-items: center;
+      @include border-radius(4px);
 
       & input {
         border: none;
@@ -101,3 +102,40 @@
             margin-left: toRem(20px);
       }
 }
+
+.contact{
+    background-color: $col-white;
+    height: toRem(230px);
+    @include border-radius(30px);
+    color: $col-dark;
+    @include grid-column(2, 1fr);
+    column-gap: toRem(50px);
+    justify-content: center;
+    align-items: center;
+    padding: toRem(50px) ;
+    transform: translateY(-130px);
+    box-shadow: 0px 1px 60px $col-shadow;
+
+    &__container{
+      @include row;
+      align-items: center;
+
+      &:first-child{
+        border-right: 2px solid rgba(108, 108, 114, 1);
+      }
+    }
+
+    &__image{
+       width: toRem(80px);
+       height: toRem(80px);
+       @include border-radius(50%);
+       background-color: $col-primary;
+       @include grid-center;
+       margin-right: toRem(18px);
+    }
+
+    &__text{
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
