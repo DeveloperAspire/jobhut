@@ -30,7 +30,7 @@
     &__heading {
       &-title {
         @include title(23px);
-        font-size: 25px;
+        font-size: toRem(25px);
       }
     }
     &__blog-cards {
