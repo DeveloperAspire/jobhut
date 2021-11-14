@@ -3,7 +3,6 @@
 @import "../../styles/abstracts/mixins";
 
 .interface {
-  margin: 0 auto;
   padding: toRem(120px) 0;
   color: $col-dark;
 
@@ -67,22 +66,48 @@
   // MEDIA QUERIES
 
   @media (max-width: 600px) {
+    padding: toRem(60px) 0;
+
+    &__heading {
+    &-title {
+      @include title(23px);
+      font-size: 25px;
+    }
+  }
+
+   &__action {
+    max-width: toRem(570px);
+    width: 100%;
+    margin-top: toRem(100px);
+
+    &-title {
+      font-size: toRem(25px);
+    }
+    &-desc {
+      font-size: 16px;
+    }
+  }
+
+  &__button {
+    @include grid-column(2, 149px);
+    align-items: center;
+    gap: toRem(25px);
+  }
+
     &__feedback {
       max-width: toRem(570px);
       width: 100%;
       margin-top: toRem(59px);
-      @include grid-column(1, 170px);
-      column-gap: toRem(30px);
-
+      @include grid-column(1, 1fr);
+      row-gap: toRem(18px);
       &-card {
-        max-width: toRem(170px);
-        width: 100%;
-        height: toRem(178px);
+        height: toRem(170px);
         @include grid-center;
         background-color: $col-primary;
         @include border-radius(10px);
         color: $col-white;
         padding: toRem(20px) 0;
+        margin: 0 auto;
 
         &-number {
           @include h5;
