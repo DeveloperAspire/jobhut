@@ -2,8 +2,10 @@ import Container from "../Container";
 import styles from "./features.module.scss";
 import Chat from "../../public/assets/icons/chat.svg";
 import Image from "next/image";
-import Phone from "../../public/assets/images/phone.svg"
-import phone from '../../public/assets/icons/phone.svg'
+import Phone from "../../public/assets/images/phone.svg";
+import phone from "../../public/assets/icons/phone.svg";
+
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Feature: React.FC = () => {
   return (
@@ -32,60 +34,71 @@ const Feature: React.FC = () => {
             {/* Grid Box */}
             <div className={styles["feature__content-grid"]}>
               <div className={styles["feature__content-grid-content"]}>
-                <div
-                  className={`${styles["feature__content-card"]} ${styles["feature__right"]}`}
-                >
-                  <Image src={Chat} alt="a chat Icon" />
-                  <h5 className={styles["feature__content-card-title"]}>
-                    unlimiter features
-                  </h5>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-                <div
-                  className={`${styles["feature__content-card"]} ${styles["feature__right"]}`}
-                >
-                  <Image src={Chat} alt="a chat Icon" />
-                  <h5 className={styles["feature__content-card-title"]}>
-                    awsome ui design
-                  </h5>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
+                <ScrollAnimation animateIn="fadeInLeft" duration={1}>
+                  <div
+                    className={`${styles["feature__content-card"]} ${styles["feature__right"]}`}
+                  >
+                    <Image src={Chat} alt="a chat Icon" />
+                    <h5 className={styles["feature__content-card-title"]}>
+                      unlimiter features
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </ScrollAnimation>
+
+                <ScrollAnimation animateIn="fadeInLeft" duration={1}>
+                  <div
+                    className={`${styles["feature__content-card"]} ${styles["feature__right"]}`}
+                  >
+                    <Image src={Chat} alt="a chat Icon" />
+                    <h5 className={styles["feature__content-card-title"]}>
+                      awsome ui design
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </ScrollAnimation>
               </div>
 
-              <div className={styles['feature-img']}>
-                <Image src={Phone} alt="An Illustration of a Phone" />
-              </div>
+              <ScrollAnimation animateIn="fadeIn" duration={2}>
+                <div className={styles["feature-img"]}>
+                  <Image src={Phone} alt="An Illustration of a Phone" />
+                </div>
+              </ScrollAnimation>
 
               {/* Fourth box */}
 
               <div className={styles["feature__content-grid-content"]}>
-                <div
-                  className={`${styles["feature__content-card"]} ${styles["feature__left"]}`}
-                >
-                  <Image src={phone} alt="a chat Icon" />
-                  <h5 className={styles["feature__content-card-title"]}>
-                    iso & androind version
-                  </h5>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
+                <ScrollAnimation animateIn="fadeInRight" duration={1}>
+                  <div
+                    className={`${styles["feature__content-card"]} ${styles["feature__left"]}`}
+                  >
+                    <Image src={phone} alt="a chat Icon" />
+                    <h5 className={styles["feature__content-card-title"]}>
+                      iso & androind version
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </ScrollAnimation>
 
-                <div
-                  className={`${styles["feature__content-card"]} ${styles["feature__left"]}`}
-                >
-                  <Image src={Chat} alt="a chat Icon" />
-                  <h5 className={styles["feature__content-card-title"]}>
-                    retina ready greaphics
-                  </h5>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
+                <ScrollAnimation animateIn="fadeInRight" duration={1}>
+                  <div
+                    className={`${styles["feature__content-card"]} ${styles["feature__left"]}`}
+                  >
+                    <Image src={Chat} alt="a chat Icon" />
+                    <h5 className={styles["feature__content-card-title"]}>
+                      retina ready greaphics
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </ScrollAnimation>
               </div>
             </div>
 
