@@ -19,7 +19,7 @@ const Info: React.FC = () => {
         </p>
       </div>
 
-      <ScrollAnimation animateIn="fadeInRight" duration={2}>
+      <ScrollAnimation animateIn="fadeInUp" duration={2}>
         <div className={styles["section__demo"]}>
           <Image src={Demo} alt="Preview demo of the application" />
         </div>
