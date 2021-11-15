@@ -5,6 +5,8 @@ import Snap from "../../public/assets/images/snapchat.svg";
 import Global from "../../public/assets/images/global.svg";
 import Join from "../../public/assets/images/join.svg";
 
+import ScrollAnimation from "react-animate-on-scroll";
+
 const Blog: React.FC = () => {
   return (
     <Container>
@@ -20,24 +22,32 @@ const Blog: React.FC = () => {
         </div>
 
         <div className={styles["section__blog-cards"]}>
-          <Card
-            image={Snap}
-            title="The Snap Pixel: How It Works and How to Install"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim."
-            link="/blog"
-          />
-          <Card
-            image={Global}
-            title="Global Partner Solutions: A Partnership of Innovation"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim."
-            link="/blog"
-          />
-          <Card
-            image={Join}
-            title="2021: An opportunity for Snapchatters to start fresh"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim."
-            link="/blog"
-          />
+          <ScrollAnimation animateIn="fadeInUp" duration={1}>
+            <Card
+              image={Snap}
+              title="The Snap Pixel: How It Works and How to Install"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim."
+              link="/blog"
+            />
+          </ScrollAnimation>
+
+          <ScrollAnimation animateIn="fadeInUp" duration={2}>
+            <Card
+              image={Global}
+              title="Global Partner Solutions: A Partnership of Innovation"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim."
+              link="/blog"
+            />
+          </ScrollAnimation>
+
+          <ScrollAnimation animateIn="fadeInUp" duration={3}>
+            <Card
+              image={Join}
+              title="2021: An opportunity for Snapchatters to start fresh"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim."
+              link="/blog"
+            />
+          </ScrollAnimation>
         </div>
       </section>
     </Container>

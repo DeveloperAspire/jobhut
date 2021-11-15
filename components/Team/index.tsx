@@ -5,6 +5,8 @@ import Two from "../../public/assets/images/henry.svg";
 import Three from "../../public/assets/images/raphael.svg";
 import Card from "./Card";
 
+import ScrollAnimation from "react-animate-on-scroll";
+
 const Team: React.FC = () => {
   return (
     <Container>
@@ -20,27 +22,35 @@ const Team: React.FC = () => {
         </div>
 
         <div className={styles["team__cards"]}>
-          <Card
-            name="LUIZZY LUIZZY"
-            role=" PROJECT MANAGER"
-            desc=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+          <ScrollAnimation animateIn="fadeInUp" duration={2}>
+            <Card
+              name="LUIZZY LUIZZY"
+              role=" PROJECT MANAGER"
+              desc=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               nunc ante velit vitae. Est tellus vitae."
-            image={One}
-          />
-          <Card
-            name="HENRY KAKA"
-            role=" FOUNDER/CEO"
-            desc=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              image={One}
+            />
+          </ScrollAnimation>
+
+          <ScrollAnimation animateIn="fadeInUp" duration={2}>
+            <Card
+              name="HENRY KAKA"
+              role=" FOUNDER/CEO"
+              desc=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               nunc ante velit vitae. Est tellus vitae."
-            image={Two}
-          />
-          <Card
-            name="RAPHAEL RAPHAEL"
-            role="LEAD DEVELOPER"
-            desc=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              image={Two}
+            />
+          </ScrollAnimation>
+
+          <ScrollAnimation animateIn="fadeInUp" duration={2}>
+            <Card
+              name="RAPHAEL RAPHAEL"
+              role="LEAD DEVELOPER"
+              desc=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               nunc ante velit vitae. Est tellus vitae."
-            image={Three}
-          />
+              image={Three}
+            />
+          </ScrollAnimation>
         </div>
       </section>
     </Container>
