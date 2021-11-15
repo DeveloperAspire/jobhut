@@ -72,7 +72,7 @@ const Feature: React.FC = () => {
               {/* Fourth box */}
 
               <div className={styles["feature__content-grid-content"]}>
-                <ScrollAnimation animateIn="fadeInRight" duration={1}>
+                <ScrollAnimation animateIn="fadeInUp" duration={1}>
                   <div
                     className={`${styles["feature__content-card"]} ${styles["feature__left"]}`}
                   >
@@ -86,7 +86,7 @@ const Feature: React.FC = () => {
                   </div>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn="fadeInRight" duration={1}>
+                <ScrollAnimation animateIn="fadeInUp" duration={1}>
                   <div
                     className={`${styles["feature__content-card"]} ${styles["feature__left"]}`}
                   >
