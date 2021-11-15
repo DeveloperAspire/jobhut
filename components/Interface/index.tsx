@@ -8,6 +8,8 @@ import Download from "../../public/assets/icons/download.svg";
 import Thumbs from "../../public/assets/icons/thumbs.svg";
 import Star from "../../public/assets/icons/star.svg";
 
+import ScrollAnimation from "react-animate-on-scroll";
+
 const Interface: React.FC = () => {
   return (
     <Container>
@@ -24,21 +26,24 @@ const Interface: React.FC = () => {
           </p>
         </div>
         <Carousel />
-        <div className={styles["interface__action"]}>
-          <h5 className={styles["interface__action-title"]}>
-            Download app Now
-          </h5>
-          <p className={styles["interface__action-desc"]}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-            nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
-            Ullamcorper risus tempor, ac nunc libero urna, feugiat.
-          </p>
-          <div className={styles["interface__button"]}>
-            <Image src={Google} alt="Logo of Jobhut" />
-            <Image src={Apple} alt="Logo of Jobhut" />
+        <ScrollAnimation animateIn="fadeInLeft" duration={2}>
+          <div className={styles["interface__action"]}>
+            <h5 className={styles["interface__action-title"]}>
+              Download app Now
+            </h5>
+            <p className={styles["interface__action-desc"]}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+              Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+            </p>
+
+            <div className={styles["interface__button"]}>
+              <Image src={Google} alt="Logo of Jobhut" />
+              <Image src={Apple} alt="Logo of Jobhut" />
+            </div>
           </div>
-        </div>
+        </ScrollAnimation>
 
         <div className={styles["interface__feedback"]}>
           <div className={styles["interface__feedback-card"]}>
