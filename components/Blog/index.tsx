@@ -31,7 +31,7 @@ const Blog: React.FC = () => {
             />
           </ScrollAnimation>
 
-          <ScrollAnimation animateIn="fadeInUp" duration={2}>
+          <ScrollAnimation animateIn="fadeInUp" duration={1}>
             <Card
               image={Global}
               title="Global Partner Solutions: A Partnership of Innovation"
@@ -40,7 +40,7 @@ const Blog: React.FC = () => {
             />
           </ScrollAnimation>
 
-          <ScrollAnimation animateIn="fadeInUp" duration={3}>
+          <ScrollAnimation animateIn="fadeInUp" duration={1}>
             <Card
               image={Join}
               title="2021: An opportunity for Snapchatters to start fresh"
