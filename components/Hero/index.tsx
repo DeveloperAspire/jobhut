@@ -5,6 +5,9 @@ import Apple from "../../public/assets/images/apple.svg";
 import styles from "./hero.module.scss";
 import Container from "../Container";
 
+import ScrollAnimation  from "react-animate-on-scroll";
+
+
 const Hero: React.FC = () => {
   return (
     <Container>
@@ -24,16 +27,24 @@ const Hero: React.FC = () => {
                 Download app Now
               </h5>
               <div className={styles["hero__text-container-child__button"]}>
-                <Image src={Google} alt="Logo of Jobhut" />
+                <ScrollAnimation animateIn="fadeInUp" duration={1} delay={2}>
+                  <Image src={Google} alt="Logo of Jobhut" />
+                </ScrollAnimation>
 
-                <Image src={Apple} alt="Logo of Jobhut" />
+                <ScrollAnimation animateIn="fadeInUp" duration={1} delay={2}>
+                  <Image src={Apple} alt="Logo of Jobhut" />
+                </ScrollAnimation>
               </div>
               <div></div>
             </div>
           </div>
         </div>
 
-        <Image src={HeroImg} alt="Logo of Jobhut" />
+        <ScrollAnimation animateIn="fadeIn" duration={2}>
+          <div>
+            <Image src={HeroImg} alt="Logo of Jobhut" />
+          </div>
+        </ScrollAnimation>
       </main>
     </Container>
   );

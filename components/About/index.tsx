@@ -3,6 +3,9 @@ import Phone from "../../public/assets/images/handphone.svg";
 import Image from "next/image";
 import Card from "./Card";
 
+import ScrollAnimation from "react-animate-on-scroll";
+
+
 const About: React.FC = () => {
   return (
     <section className={styles.about}>
@@ -22,18 +25,26 @@ const About: React.FC = () => {
         </div>
 
         <div className={styles["about__content-container"]}>
-          <Card
-            title="Creative Design"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
-          />
-          <Card
-            title="Easy to use"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
-          />
-          <Card
-            title="Best user experience"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
-          />
+          <ScrollAnimation animateIn="fadeInUp" duration={1}>
+            <Card
+              title="Creative Design"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
+            />
+          </ScrollAnimation>
+
+          <ScrollAnimation animateIn="fadeInUp" duration={1} delay={2}>
+            <Card
+              title="Easy to use"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
+            />
+          </ScrollAnimation>
+
+          <ScrollAnimation animateIn="fadeInUp" duration={1} delay={2}>
+            <Card
+              title="Best user experience"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
+            />
+          </ScrollAnimation>
         </div>
       </div>
     </section>
