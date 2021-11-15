@@ -3,11 +3,14 @@ import Logo from "../../public/assets/images/logo.svg";
 import Image from "next/image";
 import Container from "../Container";
 
+import Mobile from './Mobile'
+
 const Navbar: React.FC= () => {
   return (
     <Container>
       <header className={styles.header}>
         <Image src={Logo} alt="Logo of Jobhut" width={100} />
+        <Mobile/>
         <nav className={styles["header__navbar"]}>
           <ul>
             <li>Home</li>

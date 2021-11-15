@@ -11,6 +11,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 toRem(10px) 0 toRem(52px);
+  position: relative;
 
   &__navbar {
     @include row;
@@ -42,6 +43,7 @@
 
 @media (max-width: 600px) {
   .header{
+    margin-top: toRem(0px);
 
     &__navbar{
       display: none;
