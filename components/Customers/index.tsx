@@ -1,6 +1,9 @@
 import styles from "./customers.module.scss";
-import Carousel from './Carousel'
-const Customers: React.FC= () => {
+import Carousel from "./Carousel";
+
+import ScrollAnimation from "react-animate-on-scroll";
+
+const Customers: React.FC = () => {
   return (
     <section className={styles.section}>
       <div className={styles["section__heading"]}>
@@ -15,7 +18,9 @@ const Customers: React.FC= () => {
         </p>
       </div>
 
- <Carousel />
+      <ScrollAnimation animateIn="fadeInLeft" duration={2}>
+        <Carousel />
+      </ScrollAnimation>
     </section>
   );
 };

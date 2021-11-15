@@ -2,6 +2,8 @@ import styles from "./info.module.scss";
 import Demo from "../../public/assets/images/preview.svg";
 import Image from "next/image";
 
+import ScrollAnimation from "react-animate-on-scroll";
+
 const Info: React.FC = () => {
   return (
     <section className={styles.section}>
@@ -17,9 +19,11 @@ const Info: React.FC = () => {
         </p>
       </div>
 
-      <div className={styles["section__demo"]}>
-        <Image src={Demo} alt="Preview demo of the application" />
-      </div>
+      <ScrollAnimation animateIn="fadeInRight" duration={2}>
+        <div className={styles["section__demo"]}>
+          <Image src={Demo} alt="Preview demo of the application" />
+        </div>
+      </ScrollAnimation>
     </section>
   );
 };

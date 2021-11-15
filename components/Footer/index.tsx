@@ -9,26 +9,31 @@ import Message from "../../public/assets/icons/message.svg";
 import Call from "../../public/assets/icons/call.svg";
 import Image from "next/image";
 
+import ScrollAnimation from "react-animate-on-scroll";
+
 import Container from "../Container";
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <Container>
-        <div className={styles.contact}>
-          <div className={styles["contact__container"]}>
-            <div className={styles["contact__image"]}>
-              <Image src={Message} alt="A mail icon"/>
+        <ScrollAnimation animateIn="fadeInLeft" duration={2}>
+          <div className={styles.contact}>
+            <div className={styles["contact__container"]}>
+              <div className={styles["contact__image"]}>
+                <Image src={Message} alt="A mail icon" />
+              </div>
+              <p className={styles["contact__text"]}>info@youremail.com</p>
             </div>
-            <p className={styles["contact__text"]}>info@youremail.com</p>
-          </div>
 
-          <div className={styles["contact__container"]}>
-            <div className={styles["contact__image"]}>
-              <Image src={Call} alt="A Telephone icon" />
+            <div className={styles["contact__container"]}>
+              <div className={styles["contact__image"]}>
+                <Image src={Call} alt="A Telephone icon" />
+              </div>
+              <p className={styles["contact__text"]}>+880 321 655 9985</p>
             </div>
-            <p className={styles["contact__text"]}>+880 321 655 9985</p>
           </div>
-        </div>
+        </ScrollAnimation>
+
         <div className={styles.container}>
           <div className={styles["container-grid"]}>
             <div className={styles["container__info"]}>
